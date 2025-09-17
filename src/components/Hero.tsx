@@ -1,6 +1,5 @@
 import { ArrowRight, Download, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroPortrait from '@/assets/hero-portrait.jpg';
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -165,7 +164,7 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl hover:scale-105 transition-transform duration-500">
                 <img 
-                  src={heroPortrait} 
+                  src="src/assets/my_poster_axm_profil.jpg"
                   alt="Alex Johnson - Developer & Designer"
                   className="w-full h-full object-cover"
                 />
