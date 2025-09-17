@@ -1,5 +1,7 @@
 import { ArrowRight, Download, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import TitleRotator from "./TitleRotator";
+
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -95,7 +97,7 @@ const Hero = () => {
                 </span>
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-text-secondary">
-                Developer & Designer
+                <TitleRotator />
               </h2>
               <p className="text-base sm:text-lg text-text-secondary max-w-xl leading-relaxed">
                 I craft exceptional digital experiences through clean code and innovative design. 

@@ -55,7 +55,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
           <div className="flex-shrink-0 animate-fade-in">
-            <h1 className="text-lg sm:text-xl font-bold text-primary hover:scale-105 transition-transform duration-300 cursor-pointer">Portfolio</h1>
+            <h1 className="text-lg sm:text-xl font-bold text-primary hover:scale-105 transition-transform duration-300 cursor-pointer">Aymen Zemrani</h1>
           </div>
 
           {/* Desktop Navigation */}
