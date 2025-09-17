@@ -19,44 +19,77 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center bg-section-bg relative overflow-hidden">
-      {/* Background Elements */}
+      {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-hero-gradient opacity-5"></div>
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+      
+      {/* Floating Code Elements */}
+      <div className="absolute top-10 left-5 text-primary/20 text-sm font-mono animate-pulse">
+        &lt;div&gt;
+      </div>
+      <div className="absolute top-32 right-20 text-accent/30 text-xs font-mono animate-bounce">
+        const developer = true;
+      </div>
+      <div className="absolute bottom-40 left-32 text-primary/25 text-sm font-mono animate-pulse delay-300">
+        function() {'{'}
+      </div>
+      <div className="absolute top-64 left-10 text-accent/20 text-xs font-mono animate-bounce delay-500">
+        npm install
+      </div>
+      <div className="absolute bottom-32 right-32 text-primary/30 text-sm font-mono animate-pulse delay-700">
+        git commit -m
+      </div>
+      
+      {/* Animated Geometric Shapes */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      
+      {/* Floating Particles */}
+      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/40 rounded-full animate-bounce delay-200"></div>
+      <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-accent/30 rounded-full animate-bounce delay-700"></div>
+      <div className="absolute top-1/2 left-1/3 w-1 h-1 bg-primary/50 rounded-full animate-pulse delay-1000"></div>
+      
+      {/* Tech Icons Animation */}
+      <div className="absolute top-16 right-16 opacity-10">
+        <div className="animate-spin-slow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L15.09 5.26L19 4L20 8L16.74 9.09L18 13L14 14L12 18L10 14L6 13L7.26 9.09L4 8L5 4L8.91 5.26L12 2Z" fill="currentColor" className="text-primary"/>
+          </svg>
+        </div>
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold text-text-primary">
+          <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
+            <div className="space-y-3 sm:space-y-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-text-primary leading-tight">
                 Hi, I'm{' '}
-                <span className="text-transparent bg-hero-gradient bg-clip-text">
+                <span className="text-transparent bg-hero-gradient bg-clip-text animate-float">
                   Alex Johnson
                 </span>
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-text-secondary">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-text-secondary">
                 Developer & Designer
               </h2>
-              <p className="text-lg text-text-secondary max-w-xl">
+              <p className="text-base sm:text-lg text-text-secondary max-w-xl leading-relaxed">
                 I craft exceptional digital experiences through clean code and innovative design. 
                 Specializing in modern web technologies with a passion for creating user-centered solutions.
               </p>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8">
-              <div>
-                <div className="text-2xl font-bold text-primary">50+</div>
-                <div className="text-sm text-text-secondary">Projects</div>
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 animate-slide-in-left">
+              <div className="text-center">
+                <div className="text-xl sm:text-2xl font-bold text-primary">50+</div>
+                <div className="text-xs sm:text-sm text-text-secondary">Projects</div>
               </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">3+</div>
-                <div className="text-sm text-text-secondary">Years Experience</div>
+              <div className="text-center">
+                <div className="text-xl sm:text-2xl font-bold text-primary">3+</div>
+                <div className="text-xs sm:text-sm text-text-secondary">Years Experience</div>
               </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">25+</div>
-                <div className="text-sm text-text-secondary">Happy Clients</div>
+              <div className="text-center">
+                <div className="text-xl sm:text-2xl font-bold text-primary">25+</div>
+                <div className="text-xs sm:text-sm text-text-secondary">Happy Clients</div>
               </div>
             </div>
 
@@ -94,10 +127,10 @@ const Hero = () => {
           </div>
 
           {/* Portrait */}
-          <div className="lg:justify-self-end">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl"></div>
-              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
+          <div className="lg:justify-self-end order-first lg:order-last">
+            <div className="relative animate-slide-in-right">
+              <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl hover:scale-105 transition-transform duration-500">
                 <img 
                   src={heroPortrait} 
                   alt="Alex Johnson - Developer & Designer"
@@ -105,9 +138,9 @@ const Hero = () => {
                 />
               </div>
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-card rounded-2xl border border-border flex items-center justify-center shadow-lg">
+              <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-card rounded-2xl border border-border flex items-center justify-center shadow-lg animate-float">
                 <div className="text-center">
-                  <div className="text-lg font-bold text-primary">3+</div>
+                  <div className="text-sm sm:text-lg font-bold text-primary">3+</div>
                   <div className="text-xs text-text-secondary">Years</div>
                 </div>
               </div>

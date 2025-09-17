@@ -50,12 +50,12 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border animate-slide-in-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-primary">Portfolio</h1>
+          <div className="flex-shrink-0 animate-fade-in">
+            <h1 className="text-lg sm:text-xl font-bold text-primary hover:scale-105 transition-transform duration-300 cursor-pointer">Portfolio</h1>
           </div>
 
           {/* Desktop Navigation */}
@@ -103,17 +103,18 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-card rounded-lg mt-2 border border-border">
-              {navItems.map((item) => (
+          <div className="md:hidden animate-fade-in">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-card rounded-lg mt-2 border border-border shadow-lg">
+              {navItems.map((item, index) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  className={`block w-full text-left px-3 py-2 rounded-md text-sm sm:text-base font-medium transition-all duration-200 hover:scale-105 ${
                     activeSection === item.id
                       ? 'text-primary bg-primary/10'
                       : 'text-text-secondary hover:text-primary hover:bg-primary/5'
                   }`}
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {item.label}
                 </button>
