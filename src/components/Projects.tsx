@@ -44,6 +44,16 @@ const Projects = () => {
       live: '#',
       featured: false,
     },
+    {
+      id: 5,
+      title: 'Weather Dashboard',
+      description: 'Real-time weather dashboard with location-based forecasts, interactive maps, and weather alerts.',
+      image: '/placeholder.svg',
+      technologies: ['JavaScript', 'Weather API', 'Chart.js'],
+      github: '#',
+      live: '#',
+      featured: false,
+    },
   ];
 
   return (
