@@ -114,16 +114,49 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex gap-4">
-              <Button variant="ghost" size="sm" className="text-text-secondary hover:text-primary">
-                <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-text-secondary hover:text-primary">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-text-secondary hover:text-primary">
-                <Twitter className="h-5 w-5" />
-              </Button>
+              <a 
+                href="https://github.com/YourGitHubUsername" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="text-text-secondary hover:text-primary"
+                >
+                  <Github className="h-5 w-5" />
+                </Button>
+              </a>
+
+              <a 
+                href="https://www.linkedin.com/in/YourLinkedInUsername/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="text-text-secondary hover:text-primary"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </Button>
+              </a>
+
+              <a 
+                href="https://twitter.com/YourTwitterUsername" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="text-text-secondary hover:text-primary"
+                >
+                  <Twitter className="h-5 w-5" />
+                </Button>
+              </a>
             </div>
+
           </div>
 
           {/* Portrait */}
