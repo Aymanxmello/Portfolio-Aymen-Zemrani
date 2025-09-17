@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowRight, Download, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -84,14 +84,14 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center" style={{ marginTop: '50px' }}>
           {/* Content */}
           <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-text-primary leading-tight">
-                Hi, I'm{' '}
+                Hi, I'm{' Aymen '}
                 <span className="text-transparent bg-hero-gradient bg-clip-text animate-float">
-                  Aymen Zemrani
+                  Zemrani
                 </span>
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-text-secondary">
@@ -128,20 +128,24 @@ const Hero = () => {
                 View My Work
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button 
-                variant="outline"
-                onClick={scrollToContact}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all duration-300"
+              <a 
+                href="/TP 1 - Kotlin.pdf"   // put your PDF path here (e.g. in /public folder)
+                download="Aymen-Zemrani-CV.pdf"
               >
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
-              </Button>
+                <Button 
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all duration-300"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
+                </Button>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="flex gap-4">
               <a 
-                href="https://github.com/YourGitHubUsername" 
+                href="https://github.com/Aymanxmello" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -155,7 +159,7 @@ const Hero = () => {
               </a>
 
               <a 
-                href="https://www.linkedin.com/in/YourLinkedInUsername/" 
+                href="https://www.linkedin.com/in/aymen-zemrani-8b077532b/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -169,7 +173,7 @@ const Hero = () => {
               </a>
 
               <a 
-                href="https://twitter.com/YourTwitterUsername" 
+                href="https://www.instagram.com/ayman_x_mello/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -178,7 +182,7 @@ const Hero = () => {
                   size="sm" 
                   className="text-text-secondary hover:text-primary"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <Instagram className="h-5 w-5" />
                 </Button>
               </a>
             </div>
@@ -192,7 +196,7 @@ const Hero = () => {
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl hover:scale-105 transition-transform duration-500">
                 <img 
                   src="src/assets/my_poster_axm_profil.jpg"
-                  alt="Alex Johnson - Developer & Designer"
+                  alt="Aymen Zemrani - Developer & Designer"
                   className="w-full h-full object-cover"
                 />
               </div>
