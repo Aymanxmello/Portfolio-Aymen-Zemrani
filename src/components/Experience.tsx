@@ -66,7 +66,7 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-section-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
             Work <span className="text-primary">Experience</span>
           </h2>
@@ -85,7 +85,7 @@ const Experience = () => {
               
               <div className="space-y-8">
                 {experiences.map((exp, index) => (
-                  <div key={exp.id} className="relative flex gap-8">
+                  <div key={exp.id} className={`relative flex gap-8 animate-slide-in-left`} style={{ animationDelay: `${index * 200}ms` }}>
                     {/* Timeline Dot */}
                     <div className={`relative z-10 w-16 h-16 rounded-full border-4 flex items-center justify-center ${
                       exp.current 
@@ -154,8 +154,8 @@ const Experience = () => {
           </div>
 
           {/* Skills */}
-          <div className="space-y-8">
-            <Card className="bg-card border-border p-6">
+          <div className="space-y-8 animate-slide-in-right">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-xl font-semibold text-text-primary mb-6">Key Skills</h3>
               <div className="space-y-4">
                 {skills.map((skill) => (
@@ -175,7 +175,7 @@ const Experience = () => {
               </div>
             </Card>
 
-            <Card className="bg-card border-border p-6">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-xl font-semibold text-text-primary mb-4">Education</h3>
               <div className="space-y-4">
                 <div>

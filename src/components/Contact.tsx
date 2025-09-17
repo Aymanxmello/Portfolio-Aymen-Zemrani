@@ -70,7 +70,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
             Get In <span className="text-primary">Touch</span>
           </h2>
@@ -82,8 +82,8 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="bg-card border-border p-8">
+          <div className="lg:col-span-2 animate-slide-in-left">
+            <Card className="bg-card border-border p-8 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-2xl font-semibold text-text-primary mb-6">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -149,9 +149,9 @@ const Contact = () => {
           </div>
 
           {/* Contact Info & Social */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-in-right">
             {/* Contact Information */}
-            <Card className="bg-card border-border p-6">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-xl font-semibold text-text-primary mb-6">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((item, index) => (
@@ -178,7 +178,7 @@ const Contact = () => {
             </Card>
 
             {/* Social Links */}
-            <Card className="bg-card border-border p-6">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-xl font-semibold text-text-primary mb-6">Follow Me</h3>
               <div className="flex gap-3">
                 {socialLinks.map((social, index) => (
@@ -187,7 +187,8 @@ const Contact = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-muted border border-border rounded-full flex items-center justify-center text-text-secondary hover:text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
+                    className="w-12 h-12 bg-muted border border-border rounded-full flex items-center justify-center text-text-secondary hover:text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300 hover:scale-110 animate-float"
+                    style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <social.icon className="h-5 w-5" />
                   </a>
@@ -196,7 +197,7 @@ const Contact = () => {
             </Card>
 
             {/* Availability */}
-            <Card className="bg-card border-border p-6">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-xl font-semibold text-text-primary mb-4">Availability</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-2">

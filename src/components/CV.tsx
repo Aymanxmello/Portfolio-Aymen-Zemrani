@@ -19,7 +19,7 @@ const CV = () => {
     <section id="cv" className="py-20 bg-section-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
             My <span className="text-primary">Resume</span>
           </h2>
@@ -31,8 +31,8 @@ const CV = () => {
 
         <div className="grid lg:grid-cols-3 gap-12">
           {/* CV Preview & Download */}
-          <div className="lg:col-span-1 space-y-8">
-            <Card className="bg-card border-border p-6 text-center">
+          <div className="lg:col-span-1 space-y-8 animate-slide-in-left">
+            <Card className="bg-card border-border p-6 text-center hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <div className="mb-6">
                 <div className="w-32 h-40 mx-auto bg-muted rounded-lg border-2 border-dashed border-border flex items-center justify-center mb-4">
                   <FileText className="h-12 w-12 text-text-secondary" />
@@ -59,7 +59,7 @@ const CV = () => {
             </Card>
 
             {/* Quick Stats */}
-            <Card className="bg-card border-border p-6">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-lg font-semibold text-text-primary mb-4">Quick Facts</h3>
               <div className="space-y-3">
                 <div className="flex justify-between">
@@ -83,8 +83,8 @@ const CV = () => {
           </div>
 
           {/* Skills Overview */}
-          <div className="lg:col-span-2 space-y-8">
-            <Card className="bg-card border-border p-6">
+          <div className="lg:col-span-2 space-y-8 animate-slide-in-right">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <h3 className="text-xl font-semibold text-text-primary mb-6">Technical Skills</h3>
               
               <div className="grid md:grid-cols-2 gap-8">
@@ -143,8 +143,8 @@ const CV = () => {
             </Card>
 
             {/* Education & Certifications */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="bg-card border-border p-6">
+            <div className="grid md:grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: "400ms" }}>
+              <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 <h3 className="text-xl font-semibold text-text-primary mb-4">Education</h3>
                 <div>
                   <h4 className="font-medium text-text-primary">Bachelor of Computer Science</h4>
@@ -154,7 +154,7 @@ const CV = () => {
                 </div>
               </Card>
 
-              <Card className="bg-card border-border p-6">
+              <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 <h3 className="text-xl font-semibold text-text-primary mb-4">Certifications</h3>
                 <div className="space-y-3">
                   <div>
@@ -174,7 +174,7 @@ const CV = () => {
             </div>
 
             {/* Languages */}
-            <Card className="bg-card border-border p-6">
+            <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in" style={{ animationDelay: "600ms" }}>
               <h3 className="text-xl font-semibold text-text-primary mb-4">Languages</h3>
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">

@@ -42,7 +42,7 @@ const Clients = () => {
     <section id="clients" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
             Trusted by <span className="text-primary">Amazing Clients</span>
           </h2>
@@ -53,13 +53,14 @@ const Clients = () => {
         </div>
 
         {/* Client Logos */}
-        <div className="mb-20">
+        <div className="mb-20 animate-fade-in">
           <h3 className="text-xl font-semibold text-text-primary text-center mb-8">Companies I've Worked With</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {clients.map((client, index) => (
               <div 
                 key={index}
-                className="group flex items-center justify-center p-6 bg-card border border-border rounded-lg hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                className="group flex items-center justify-center p-6 bg-card border border-border rounded-lg hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-24 h-12 bg-muted rounded flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                   <span className="text-sm font-medium text-text-secondary">{client.name}</span>
@@ -70,13 +71,14 @@ const Clients = () => {
         </div>
 
         {/* Testimonials */}
-        <div>
+        <div className="animate-slide-in-left">
           <h3 className="text-2xl font-semibold text-text-primary text-center mb-12">What Clients Say</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
+            {testimonials.map((testimonial, index) => (
               <Card 
                 key={testimonial.id} 
-                className="bg-card border-border hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 p-6 relative"
+                className="bg-card border-border hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 p-6 relative animate-fade-in-up"
+                style={{ animationDelay: `${index * 200}ms` }}
               >
                 {/* Quote Icon */}
                 <div className="absolute top-4 right-4 text-primary/20">
@@ -111,7 +113,7 @@ const Clients = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-20">
+        <div className="mt-20 animate-slide-in-right">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">50+</div>
