@@ -25,6 +25,9 @@ const Hero = () => {
       <div className="absolute top-10 left-5 text-primary/20 text-sm font-mono animate-pulse">
         &lt;div&gt;
       </div>
+      <div className="absolute top-20 left-20 text-primary/20 text-sm font-mono animate-pulse">
+        if (success) {'{'} run(); {'}'}
+      </div>
       <div className="absolute top-32 right-20 text-accent/30 text-xs font-mono animate-bounce">
         const developer = true;
       </div>
@@ -36,6 +39,30 @@ const Hero = () => {
       </div>
       <div className="absolute bottom-32 right-32 text-primary/30 text-sm font-mono animate-pulse delay-700">
         git commit -m
+      </div>
+      <div className="absolute top-48 right-10 text-accent/25 text-sm font-mono animate-pulse">
+        &lt;/div&gt;
+      </div>
+      <div className="absolute top-72 left-1/3 text-primary/20 text-xs font-mono animate-bounce">
+        console.log("Hello World");
+      </div>
+      <div className="absolute bottom-20 left-16 text-accent/30 text-sm font-mono animate-pulse delay-500">
+        &lt;section&gt;
+      </div>
+      <div className="absolute top-1/2 right-1/4 text-primary/25 text-sm font-mono animate-bounce">
+        &lt;/section&gt;
+      </div>
+      <div className="absolute bottom-10 left-1/2 text-accent/20 text-xs font-mono animate-pulse">
+        return true;
+      </div>
+      <div className="absolute top-1/4 right-1/3 text-primary/30 text-sm font-mono animate-bounce delay-300">
+        yarn start
+      </div>
+      <div className="absolute top-3/4 left-20 text-accent/25 text-xs font-mono animate-pulse delay-700">
+        &lt;h1&gt;Code&lt;/h1&gt;
+      </div>
+      <div className="absolute top-10 right-1/2 text-primary/20 text-sm font-mono animate-bounce">
+        export default App;
       </div>
       
       {/* Animated Geometric Shapes */}
