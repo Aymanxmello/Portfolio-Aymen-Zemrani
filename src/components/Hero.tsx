@@ -65,7 +65,7 @@ const Hero = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-text-primary leading-tight">
                 Hi, I'm{' '}
                 <span className="text-transparent bg-hero-gradient bg-clip-text animate-float">
-                  Alex Johnson
+                  Aymen Zemrani
                 </span>
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-text-secondary">
@@ -80,15 +80,15 @@ const Hero = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 sm:gap-8 animate-slide-in-left">
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-primary">50+</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">10+</div>
                 <div className="text-xs sm:text-sm text-text-secondary">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-primary">3+</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">2+</div>
                 <div className="text-xs sm:text-sm text-text-secondary">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-primary">25+</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">10+</div>
                 <div className="text-xs sm:text-sm text-text-secondary">Happy Clients</div>
               </div>
             </div>
@@ -140,7 +140,7 @@ const Hero = () => {
               {/* Floating Elements */}
               <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-card rounded-2xl border border-border flex items-center justify-center shadow-lg animate-float">
                 <div className="text-center">
-                  <div className="text-sm sm:text-lg font-bold text-primary">3+</div>
+                  <div className="text-sm sm:text-lg font-bold text-primary">2+</div>
                   <div className="text-xs text-text-secondary">Years</div>
                 </div>
               </div>
