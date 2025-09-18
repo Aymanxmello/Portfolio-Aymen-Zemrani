@@ -4,7 +4,7 @@ export default function TitleRotator() {
   return (
     <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-text-secondary">
       <Typewriter
-        words={["Mobile Developer", "Full Stack Developer", "Designer"]}
+        words={["Mobile Developer", "Full Stack Developer", "Photographer", "Designer"]}
         loop={true}
         cursor
         cursorStyle="|"

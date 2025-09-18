@@ -4,9 +4,9 @@ import { Card } from '@/components/ui/card';
 const Clients = () => {
   const clients = [
     { name: 'UM6P', logo: '/logo/1.png' },
-    { name: 'Elkhawarizmi', logo: '/placeholder.svg' },
-    { name: 'DesignPro', logo: '/placeholder.svg' },
-    { name: 'WebSolutions', logo: '/placeholder.svg' },
+    { name: 'Elkhawarizmi', logo: '/logo/j.png' },
+    { name: 'DesignPro', logo: '/logo/1HP.png' },
+    { name: 'WebSolutions', logo: '/logo/Poster Abdkrim  normal (1).png' },
     { name: 'AppMakers', logo: '/placeholder.svg' },
     { name: 'CloudTech', logo: '/placeholder.svg' },
   ];
