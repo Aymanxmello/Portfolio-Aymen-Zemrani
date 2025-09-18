@@ -54,21 +54,26 @@ const Clients = () => {
 
         {/* Client Logos */}
         <div className="mb-20 animate-fade-in">
-          <h3 className="text-xl font-semibold text-text-primary text-center mb-8">Companies I've Worked With</h3>
+          <h3 className="text-xl font-semibold text-text-primary text-center mb-8">
+            Companies I've Worked With
+          </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {clients.map((client, index) => (
-              <div 
+              <div
                 key={index}
                 className="group flex items-center justify-center p-6 bg-card border border-border rounded-lg hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-24 h-12 bg-muted rounded flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <span className="text-sm font-medium text-text-secondary">{client.name}</span>
-                </div>
+                <img
+                  src={client.logo} // <-- your PNG image URL here
+                  alt={client.name}
+                  className="w-24 h-12 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
             ))}
           </div>
         </div>
+
 
         {/* Testimonials */}
         <div className="animate-slide-in-left">

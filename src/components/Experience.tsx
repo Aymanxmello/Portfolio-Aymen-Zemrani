@@ -40,7 +40,7 @@ const Experience = () => {
   const skills = [
     { name: 'JavaScript', level: 95 },
     { name: 'React', level: 90 },
-    { name: 'JavaScript', level: 85 },
+    { name: 'PHP', level: 85 },
     { name: 'Flutter', level: 80 },
     { name: 'Python', level: 75 },
     { name: 'Kotlin', level: 90 },
