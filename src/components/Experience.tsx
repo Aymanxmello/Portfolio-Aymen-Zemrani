@@ -5,18 +5,18 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Senior Full Stack Developer',
-      company: 'TechCorp Inc.',
-      location: 'San Francisco, CA',
-      period: 'Jan 2022 - Present',
-      type: 'Full-time',
+      title: 'Graphic Designer (Freelance)',
+      company: 'AXM',
+      location: 'Benguerir, Morocco',
+      period: '2023 - Present',
+      type: 'Remote',
       description: [
-        'Led development of microservices architecture serving 100k+ daily users',
-        'Mentored junior developers and conducted code reviews',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Collaborated with design team to create responsive web applications'
+        'Designed and built strong brand identities for clients and personal branding projects',
+        'Created professional visual content using Photoshop, Illustrator, and Canva',
+        'Collaborated with clients to develop logos, social media assets, and marketing materials',
+        'Delivered creative design solutions aligned with modern trends and client needs'
       ],
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Docker'],
+      technologies: ['Photoshop', 'Illustrator', 'Canva', 'Branding'],
       current: true,
     },
     {
