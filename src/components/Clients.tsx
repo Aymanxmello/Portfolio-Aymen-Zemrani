@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 
 const Clients = () => {
   const clients = [
-    { name: 'UM6P', logo: '/placeholder.svg' },
+    { name: 'UM6P', logo: '/logo/1.png' },
     { name: 'Elkhawarizmi', logo: '/placeholder.svg' },
     { name: 'DesignPro', logo: '/placeholder.svg' },
     { name: 'WebSolutions', logo: '/placeholder.svg' },
@@ -61,13 +61,13 @@ const Clients = () => {
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="group flex items-center justify-center p-6 bg-card border border-border rounded-lg hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in"
+                className="group flex items-center justify-center p-4 bg-card border border-border rounded-lg hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <img
                   src={client.logo} // <-- your PNG image URL here
                   alt={client.name}
-                  className="w-24 h-12 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-36 h-12 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}

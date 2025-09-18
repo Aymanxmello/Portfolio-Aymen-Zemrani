@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Graphic Designer (Freelance)',
+      title: 'Graphic Designer',
       company: 'AXM',
       location: 'Benguerir, Morocco',
       period: '2023 - Present',
@@ -163,7 +163,7 @@ const Experience = () => {
               <h3 className="text-xl font-semibold text-text-primary mb-4">Education</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-medium text-text-primary">Mobile Developer</h4>
+                  <h4 className="font-medium text-text-primary">Mobile Developer | Full Stack Developer</h4>
                   <p className="text-sm text-primary">CMC Rabat</p>
                   <p className="text-sm text-text-secondary">Bac+2 • 2024-2026</p>
                 </div>
