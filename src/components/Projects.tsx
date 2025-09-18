@@ -1,6 +1,10 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { FaBehance } from "react-icons/fa";
+
+
+
 
 const Projects = () => {
   const projects = [
@@ -16,41 +20,41 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Personal Brand - Oussama Rizqui',
-      description: 'A professional personal brand design for Oussama Rizqui, French teacher and orientation coach. Includes modern business card design, strong visual identity, and branding strategy to enhance professional visibility.',
-      image: '/Business_Card_Mockup_2.jpg',
-      technologies: ['Photoshop', 'Illustrator', 'Branding'],
-      github: '#',
+      title: 'Weather Web App',
+      description: 'A responsive web application that displays real-time weather data for any city using the OpenWeatherMap API.',
+      image: '/55.png',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
+      github: 'https://github.com/Aymanxmello',
       live: '#',
       featured: true,
     },
     {
       id: 3,
-      title: 'Portfolio Website',
-      description: 'Personal portfolio website showcasing projects and skills. Built with modern web technologies and optimized for performance.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-      github: '#',
+      title: 'Personal Brand - Abdelkarim Elidrissi',
+      description: 'Professor of Literary Subjects for First and Second Year Baccalaureate students',
+      image: '/Add a heading (2).jpg',
+      technologies: ['Photoshop', 'Illustrator', 'Branding'],
+      github: 'https://www.behance.net/aymanxmello',
       live: '#',
       featured: false,
     },
     {
       id: 4,
-      title: 'Weather Dashboard',
-      description: 'Real-time weather dashboard with location-based forecasts, interactive maps, and weather alerts.',
-      image: '/placeholder.svg',
-      technologies: ['JavaScript', 'Weather API', 'Chart.js'],
-      github: '#',
+      title: 'Elkhwarizmi Tutoring Center',
+      description: 'Educational support and tutoring centre helping students in various school subjects',
+      image: '/Free Employee ID Card Holder Mockup.jpg',
+      technologies: ['Photoshop', 'Illustrator', 'Branding', 'Canva'],
+      github: 'https://www.behance.net/aymanxmello',
       live: '#',
       featured: false,
     },
     {
       id: 5,
-      title: 'Weather Dashboard',
-      description: 'Real-time weather dashboard with location-based forecasts, interactive maps, and weather alerts.',
-      image: '/placeholder.svg',
-      technologies: ['JavaScript', 'Weather API', 'Chart.js'],
-      github: '#',
+      title: 'Brand - Phera Book',
+      description: 'A productivity-focused brand offering planners and notebooks designed for effective time management',
+      image: '/20.jpg',
+      technologies: ['Photoshop', 'Illustrator', 'InDesign', 'Branding'],
+      github: 'https://www.behance.net/aymanxmello',
       live: '#',
       featured: false,
     },
@@ -90,7 +94,7 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2 sm:gap-4">
                     <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-xs sm:text-sm">
                       <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                      Code
+                      <a href={project.github}>Code</a>
                     </Button>
                     <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs sm:text-sm">
                       <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
@@ -164,8 +168,12 @@ const Projects = () => {
                   </div>
 
                   <div className="flex gap-2">
-                    <Button variant="ghost" size="sm" className="text-text-secondary hover:text-primary p-1">
-                      <Github className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      className="text-text-secondary hover:text-primary p-1"
+                    >
+                      <a href={project.github}><FaBehance className="h-3 w-3 sm:h-4 sm:w-4" /></a>
                     </Button>
                     <Button variant="ghost" size="sm" className="text-text-secondary hover:text-primary p-1">
                       <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4" />
