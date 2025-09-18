@@ -21,34 +21,18 @@ const Experience = () => {
     },
     {
       id: 2,
-      title: 'Frontend Developer',
-      company: 'StartupXYZ',
-      location: 'Remote',
-      period: 'Jun 2021 - Dec 2021',
-      type: 'Contract',
+      title: 'Photographer',
+      company: 'UM6P',
+      location: 'Benguerir, Morocco',
+      period: '2023 - 2024',
+      type: 'On-site',
       description: [
-        'Built responsive web applications using React and TypeScript',
-        'Optimized application performance improving load times by 40%',
-        'Integrated third-party APIs and payment systems',
-        'Worked closely with UX designers to implement pixel-perfect designs'
+        'Covered university events, capturing high-quality photos for official use',
+        'Produced creative visual content for academic and cultural activities',
+        'Worked closely with student organizations to document events and projects',
+        'Developed photography skills in composition, lighting, and post-editing'
       ],
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
-      current: false,
-    },
-    {
-      id: 3,
-      title: 'Web Developer Intern',
-      company: 'Digital Agency Pro',
-      location: 'New York, NY',
-      period: 'Jan 2021 - May 2021',
-      type: 'Internship',
-      description: [
-        'Developed client websites using modern web technologies',
-        'Participated in agile development processes',
-        'Assisted in debugging and testing applications',
-        'Created technical documentation for projects'
-      ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress', 'PHP'],
+      technologies: ['Photography', 'Lightroom', 'Photoshop'],
       current: false,
     },
   ];
@@ -56,10 +40,10 @@ const Experience = () => {
   const skills = [
     { name: 'JavaScript', level: 95 },
     { name: 'React', level: 90 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'Node.js', level: 80 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'Flutter', level: 80 },
     { name: 'Python', level: 75 },
-    { name: 'AWS', level: 70 },
+    { name: 'Kotlin', level: 90 },
   ];
 
   return (
@@ -179,9 +163,9 @@ const Experience = () => {
               <h3 className="text-xl font-semibold text-text-primary mb-4">Education</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-medium text-text-primary">Computer Science</h4>
-                  <p className="text-sm text-primary">University of Technology</p>
-                  <p className="text-sm text-text-secondary">Bachelor's Degree • 2018-2022</p>
+                  <h4 className="font-medium text-text-primary">Mobile Developer</h4>
+                  <p className="text-sm text-primary">CMC Rabat</p>
+                  <p className="text-sm text-text-secondary">Bac+2 • 2024-2026</p>
                 </div>
               </div>
             </Card>

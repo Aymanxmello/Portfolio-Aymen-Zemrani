@@ -3,8 +3,8 @@ import { Card } from '@/components/ui/card';
 
 const Clients = () => {
   const clients = [
-    { name: 'TechCorp', logo: '/placeholder.svg' },
-    { name: 'StartupXYZ', logo: '/placeholder.svg' },
+    { name: 'UM6P', logo: '/placeholder.svg' },
+    { name: 'Elkhawarizmi', logo: '/placeholder.svg' },
     { name: 'DesignPro', logo: '/placeholder.svg' },
     { name: 'WebSolutions', logo: '/placeholder.svg' },
     { name: 'AppMakers', logo: '/placeholder.svg' },
