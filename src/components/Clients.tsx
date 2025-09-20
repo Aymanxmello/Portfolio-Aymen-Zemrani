@@ -6,33 +6,33 @@ const Clients = () => {
     { name: 'UM6P', logo: '/logo/1.png' },
     { name: 'Elkhawarizmi', logo: '/logo/j.png' },
     { name: 'DesignPro', logo: '/logo/1HP.png' },
-    { name: 'WebSolutions', logo: '/logo/Poster Abdkrim  normal (1).png' },
-    { name: 'AppMakers', logo: '/placeholder.svg' },
-    { name: 'CloudTech', logo: '/placeholder.svg' },
+    { name: 'WebSolutions', logo: '/logo/craiyon_085820_image.png' },
+    { name: 'AppMakers', logo: '/logo/craiyon_090156_image.png' },
+    { name: 'CloudTech', logo: '/logo/craiyon_090502_image.png' },
   ];
 
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      role: 'CTO at TechCorp',
-      content: 'Alex delivered exceptional work on our e-commerce platform. The code quality is outstanding and the project was completed ahead of schedule.',
+      name: 'REDOUANE ENNEJMI',
+      role: 'Director of the Elkhawarizmi Center',
+      content: 'و شكرا جزيلا سي أيمن، وقت ما كنحتاجوك كنلقاوك، بالرغم من الوقت لي عندك عامر حتا نتا كنلقاوك مزال مآمن بالفكرة و كدعمها باش ما قدرتي',
       rating: 5,
-      avatar: '/placeholder.svg',
+      avatar: '/20.jpg',
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      role: 'Founder at StartupXYZ',
-      content: 'Working with Alex was a fantastic experience. His attention to detail and technical expertise helped us launch our product successfully.',
+      name: 'OUSSAMA RIZQUI',
+      role: 'French Teacher',
+      content: 'الله يعطيك الصحة ما عندي ما نقول، برافو عليك، كنتمنى ليك مزيد ديال التوفيق و النجاح فالمسار ديالك',
       rating: 5,
       avatar: '/placeholder.svg',
     },
     {
       id: 3,
-      name: 'Emma Davis',
-      role: 'Product Manager at DesignPro',
-      content: 'Alex transformed our design concepts into a beautiful, functional website. Highly recommended for any web development project.',
+      name: 'ACHRAF HAKIK',
+      role: 'Teacher Mathematic & Physics',
+      content: 'الله يعطيك الصحة، ديزاين فالمستوى العالي، كلشي منسق ومضبوط. برافو عليك',
       rating: 5,
       avatar: '/placeholder.svg',
     },
@@ -121,11 +121,11 @@ const Clients = () => {
         <div className="mt-20 animate-slide-in-right">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
               <div className="text-text-secondary">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">25+</div>
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
               <div className="text-text-secondary">Happy Clients</div>
             </div>
             <div className="text-center">

@@ -2,10 +2,19 @@ import { Download, FileText, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
+const handleViewOnline = () => {
+  window.open('/Aymen_Zemrani_CV.pdf', '_blank'); // Opens PDF in new tab
+};
 const CV = () => {
   const handleDownloadCV = () => {
     // In a real implementation, this would download the actual CV file
-    console.log('Downloading CV...');
+    const handleDownloadCV = () => {
+      const link = document.createElement('a');
+      link.href = '/Aymen_Zemrani_CV.pdf'; // Path to your PDF in public folder
+      link.download = 'Aymen_Zemrani_CV'; // Name of the downloaded file
+      link.click();
+    };
+
   };
 
   const skills = {
@@ -34,22 +43,33 @@ const CV = () => {
           <div className="lg:col-span-1 space-y-8 animate-slide-in-left">
             <Card className="bg-card border-border p-6 text-center hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
               <div className="mb-6">
-                <div className="w-32 h-40 mx-auto bg-muted rounded-lg border-2 border-dashed border-border flex items-center justify-center mb-4">
-                  <FileText className="h-12 w-12 text-text-secondary" />
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-border flex items-center justify-center mb-4">
+                  <img 
+                    src="/me.jpg" 
+                    alt="My Photo" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold text-text-primary mb-2">Alex Johnson</h3>
-                <p className="text-text-secondary">Full Stack Developer</p>
+
+                <h3 className="text-xl font-semibold text-text-primary mb-2">Aymen Zemrani</h3>
+                <p className="text-text-secondary">Mobile & Web Developer</p>
               </div>
 
-              <Button 
-                onClick={handleDownloadCV}
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mb-4"
+              <a 
+                href="/Aymen_Zemrani_CV.pdf"   // put your PDF path here (e.g. in /public folder)
+                download="Aymen-Zemrani-CV.pdf"
               >
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
-              </Button>
+                <Button 
+                  variant="outline"
+                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mb-4"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
+                </Button>
+              </a>
 
-              <Button 
+              <Button
+                onClick={handleViewOnline}
                 variant="outline"
                 className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
@@ -68,11 +88,11 @@ const CV = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-text-secondary">Projects</span>
-                  <span className="text-text-primary">50+</span>
+                  <span className="text-text-primary">10+</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-text-secondary">Clients</span>
-                  <span className="text-text-primary">25+</span>
+                  <span className="text-text-primary">10+</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-text-secondary">Satisfaction</span>
@@ -147,10 +167,10 @@ const CV = () => {
               <Card className="bg-card border-border p-6 hover:bg-card-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                 <h3 className="text-xl font-semibold text-text-primary mb-4">Education</h3>
                 <div>
-                  <h4 className="font-medium text-text-primary">Bachelor of Computer Science</h4>
-                  <p className="text-primary">University of Technology</p>
-                  <p className="text-sm text-text-secondary">2018 - 2022</p>
-                  <p className="text-sm text-text-secondary mt-2">Graduated Magna Cum Laude</p>
+                  <h4 className="font-medium text-text-primary">Baccalaureate in Physical Sciences</h4>
+                  <p className="text-primary">Shaheed Saleh Serghini High School</p>
+                  <p className="text-sm text-text-secondary">Ben Guerir</p>
+                  <p className="text-sm text-text-secondary mt-2">2023 - 2024</p>
                 </div>
               </Card>
 
@@ -158,16 +178,16 @@ const CV = () => {
                 <h3 className="text-xl font-semibold text-text-primary mb-4">Certifications</h3>
                 <div className="space-y-3">
                   <div>
-                    <h4 className="font-medium text-text-primary text-sm">AWS Certified Developer</h4>
-                    <p className="text-xs text-text-secondary">Amazon Web Services • 2023</p>
+                    <h4 className="font-medium text-text-primary text-sm">CC Photoshop adobe Certificate</h4>
+                    <p className="text-xs text-text-secondary">Msaaqat • 2023</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-text-primary text-sm">React Professional Certificate</h4>
-                    <p className="text-xs text-text-secondary">Meta • 2022</p>
+                    <h4 className="font-medium text-text-primary text-sm">Photography Certificate</h4>
+                    <p className="text-xs text-text-secondary">Edraak • 2023</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-text-primary text-sm">JavaScript Algorithms</h4>
-                    <p className="text-xs text-text-secondary">freeCodeCamp • 2021</p>
+                    <h4 className="font-medium text-text-primary text-sm">Python Certificate</h4>
+                    <p className="text-xs text-text-secondary">1337 Coding • 2022</p>
                   </div>
                 </div>
               </Card>
@@ -178,12 +198,12 @@ const CV = () => {
               <h3 className="text-xl font-semibold text-text-primary mb-4">Languages</h3>
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
-                  <div className="font-medium text-text-primary">English</div>
+                  <div className="font-medium text-text-primary">Arabic</div>
                   <div className="text-sm text-text-secondary">Native</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-medium text-text-primary">Spanish</div>
-                  <div className="text-sm text-text-secondary">Fluent</div>
+                  <div className="font-medium text-text-primary">English</div>
+                  <div className="text-sm text-text-secondary">Intermediate</div>
                 </div>
                 <div className="text-center">
                   <div className="font-medium text-text-primary">French</div>
