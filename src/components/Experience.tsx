@@ -5,34 +5,33 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Graphic Designer',
+      title: 'Academic and Personal Projects',
+      company: 'AXM',
+      location: 'Rabat, Morocco',
+      period: '2024 - Present',
+      type: 'Full Time',
+      description: [
+        'To-Do List Application (PHP + MySQL, with dashboard and task management)',
+        'Hotel reservation system (PHP, SQL, Bootstrap)',
+        'Android application development in Kotlin and Flutter',
+        'Static and dynamic websites in HTML, CSS, React'
+      ],
+      technologies: ['PHP', 'Kotlin', 'React', 'MySQL'],
+      current: true,
+    },
+    {
+      id: 2,
+      title: 'AXM Agency - Founder & Graphic Designer',
       company: 'AXM',
       location: 'Benguerir, Morocco',
       period: '2023 - Present',
       type: 'Remote',
       description: [
-        'Designed and built strong brand identities for clients and personal branding projects',
-        'Created professional visual content using Photoshop, Illustrator, and Canva',
-        'Collaborated with clients to develop logos, social media assets, and marketing materials',
-        'Delivered creative design solutions aligned with modern trends and client needs'
+        'Creation of a digital marketing agency: branding, photography, design, web and mobile development',
+        'Completion of 10 branding projects for clients, including logos, business cards, and social media kits',
+        'Design of marketing materials such as brochures, flyers, and posters for various events and promotions'
       ],
       technologies: ['Photoshop', 'Illustrator', 'Canva', 'Branding'],
-      current: true,
-    },
-    {
-      id: 2,
-      title: 'Photographer',
-      company: 'UM6P',
-      location: 'Benguerir, Morocco',
-      period: '2023 - 2024',
-      type: 'On-site',
-      description: [
-        'Covered university events, capturing high-quality photos for official use',
-        'Produced creative visual content for academic and cultural activities',
-        'Worked closely with student organizations to document events and projects',
-        'Developed photography skills in composition, lighting, and post-editing'
-      ],
-      technologies: ['Photography', 'Lightroom', 'Photoshop'],
       current: false,
     },
   ];
