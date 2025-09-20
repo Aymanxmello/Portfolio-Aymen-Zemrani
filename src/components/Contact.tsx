@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -43,27 +43,27 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex@example.com',
-      href: 'mailto:alex@example.com'
+      value: 'aymen.zemrani@gmail.com',
+      href: 'mailto:aymen.zemrani@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+212 608-668400',
+      href: 'tel:+212608668400'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Rabat, Morocco',
       href: null
     },
   ];
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: 'https://github.com' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/Aymanxmello' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/aymen-zemrani-8b077532b/' },
+    { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/ayman_x_mello/' }
   ];
 
   return (
